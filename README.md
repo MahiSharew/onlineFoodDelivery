@@ -1,7 +1,28 @@
 # Online food Delivery System 
-online food delivery system using 
+Online food Delivery System  have  4 major microservices that work and integrate together.
+##### Order Service 
+process all  customer orders such as customer order food by choosing a different menu, quantity; get valid
+payment information from payment Microservices  and Send Email about order information to the customer 
+##### Member Management Service
+register user, user information, user credit card information, user delivery address information 
+##### Restaurant Management Service
+handle all the restaurant and menu information such as registering restaurant information, get all restaurant and food information  find Restaurant by restaurant ID
+##### Payment Management Service 
+using sample data, check if using credit card information is valid or not and   send the result through the message queue  
+
+##### High level  design 
+![High level solution design](https://github.com/MahiSharew/onlineFoodDelivery/blob/master/img/High-LevelDesignDiagram.png)
+> High level solution design 
+
+
+
+###### Order microservice to Restaurant microservice communication using AMQP and RabbitMQ
+![AMQP and RabbitMQ](https://github.com/MahiSharew/onlineFoodDelivery/blob/master/img/message.jpg)
+> AMQP and RabbitMQ
+---
+
+
 ## Technologies used
-<pre>
 <details><summary>Use the technologies for restaurant Microservice</summary>
 <p>
  * Java Persistence Query Language (JPQL)
@@ -30,17 +51,3 @@ logging aspect on file, rest, service and Dao package )
 * Email
 </p>
 </details>
-<pre>
-High-Level Design Diagram
-
-# High level solution design 
-![High level solution design](https://github.com/MahiSharew/onlineFoodDelivery/blob/master/img/High-LevelDesignDiagram.png)
-> High level  design 
----
-Order microservice to Restaurant microservice communication using AMQP and RabbitMQ
-![AMQP and RabbitMQ](https://github.com/MahiSharew/onlineFoodDelivery/blob/master/img/message.jpg)
-> AMQP and RabbitMQ
----
-# High level solution design 
-![High level solution design](https://github.com/MahiSharew/SEChallenge/blob/master/SystemDesign/SystemDesign.png)
-> High level solution design 
