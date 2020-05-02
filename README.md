@@ -32,4 +32,11 @@ logging aspect on file, rest, service and Dao package )
 </details>
 <pre>
 High-Level Design Diagram
-![alt text](http://github.com/MahiSharew/onlineFoodDelivery/img/High-LevelDesignDiagram.png)
+# High level solution design 
+![High level solution design](https://github.com/MahiSharew/onlineFoodDelivery/blob/master/img/High-LevelDesignDiagram.png)
+> High level  design 
+---
+Order microservice to Restaurant microservice communication using AMQP and RabbitMQ
+![AMQP and RabbitMQ](https://github.com/MahiSharew/onlineFoodDelivery/blob/master/img/message.jpg)
+> AMQP and RabbitMQ
+---
