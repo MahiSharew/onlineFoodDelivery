@@ -31,3 +31,5 @@ logging aspect on file, rest, service and Dao package )
 </p>
 </details>
 <pre>
+High-Level Design Diagram
+![alt text](http://github.com/MahiSharew/onlineFoodDelivery/img/High-LevelDesignDiagram.png)
