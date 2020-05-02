@@ -1,0 +1,20 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: Order-Microservice
+   
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    username: yohannsborena@gmail.com
+    password: Pass123*
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    protocol: smtp
+    test-connection: false

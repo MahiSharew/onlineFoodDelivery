@@ -1,0 +1,21 @@
+{
+    "customer":{
+    "firstName":"Eric",
+    "lastName":"NKURIKIYIMANA",
+    "email":"ericb@yahoo.com",
+    "phoneNumber":"1234567891"
+    },
+    "address":{
+     "street":"1000 N 4th St",
+     "city":"Fairfield",
+      "state":"Iowa",
+      "zipCode":"52557"
+    },
+    "creditCard":{
+    "cardNumber":"22123123123123",
+    "expiryMonth":"06",
+    "expiryYear":"2022",
+    "securityCode":"025"   
+    }
+   
+}

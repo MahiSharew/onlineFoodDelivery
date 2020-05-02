@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title th:remove="all">Template for Order email</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+	<div style="font-size: 20px">
+		<em>Food Can Fix It</em>
+	</div>
+	<p th:text="${'Hello ' + name}"></p>
+
+	<H4>Thank you for working with us.</H4>
+	<H4>Details your food is it on way !</H4>
+
+	<p>Here are your Order details:</p>
+	<b>Order Number: </b>
+	<span th:text="${order.Id}"></span>
+
+	<div th:each="item : ${order.foodItem}">
+		<div style="text-indent: 3em;">
+			<p>
+				<b>Product: </b> <span th:text="${item.foodName}"></span>
+			</p>
+			<p>
+				<b>Quantity: </b> <span th:text="${item.quantity}"></span>
+			</p>
+			<p>
+				<b>Price: </b> <span th:text="${item.foodPrice}"></span>
+			</p>
+		</div>
+		<!--  
+		<p>
+			<b>Total: </b> <div th:with="result=${item.quantity * item.foodName}"><span th:text="${result}"></span></div>
+		</p>-->
+		
+	</div>
+
+	<br/>
+	<p>
+		As a special bonus, you can find <b>Food  Specifications</b>
+		in the following address 
+	</p>
+
+	<p>
+		<br /> Thanks for your order, <br /> &emsp; <em><b>we are Dream team </b></em>
+	</p>
+</body>
+</html>

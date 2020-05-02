@@ -1,0 +1,5 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: Customer-service
